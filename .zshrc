@@ -12,6 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias v=vim
 alias py=python
+alias pnv=pipenv
 alias vim=nvim
 alias clr=clear
 alias ls=logo-ls
