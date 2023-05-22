@@ -1,0 +1,53 @@
+" common
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set number
+set scrolloff=5
+set history=100
+set clipboard=unnamed
+set foldmethod=syntax
+set nofoldenable
+set nocompatible
+syntax enable
+syntax on
+set wildmenu
+set laststatus=2
+set ruler
+set nowrap
+set expandtab
+set shiftwidth=1
+set keep-english-in-normal-and-restore-in-insert
+set ideastrictmode
+set noerrorbells
+set visualbell
+inoremap jj <Esc>
+
+" navigate within insert mode
+imap <C-h> <Left>
+imap <C-l> <Right>
+imap <C-j> <Down>
+imap <C-k> <Up>
+
+let mapleader=" "
+
+" close buffer
+nmap <leader>bd :q!<CR>
+
+" easymotion
+set easymotion
+map <leader>F <Plug>(easymotion-s)
+map <leader>f <Plug>(easymotion-f)
+
+" NERDTree
+set NERDTree
+map <leader>e :NERDTree<CR>
+
+" lsp
+nnoremap gd :action GotoDeclaration<CR>
+
+" switch tab
+nmap <s-h> <Action>(PreviousTab)
+nmap <s-l> <Action>(NextTab)
