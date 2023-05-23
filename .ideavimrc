@@ -51,3 +51,10 @@ nnoremap gd :action GotoDeclaration<CR>
 " switch tab
 nmap <s-h> <Action>(PreviousTab)
 nmap <s-l> <Action>(NextTab)
+
+" comment
+nnoremap gcc :action CommentByLineComment<CR>
+vnoremap gc :action CommentByLineComment<CR>
+
+" live grep
+nnoremap <Leader>/ :action Find<CR>
