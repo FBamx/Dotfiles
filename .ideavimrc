@@ -31,6 +31,9 @@ imap <C-l> <Right>
 imap <C-j> <Down>
 imap <C-k> <Up>
 
+" select all
+nmap <C-a> ggvG
+
 let mapleader=" "
 
 " close buffer
