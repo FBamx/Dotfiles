@@ -55,6 +55,10 @@ cp .tmux.conf ~/
 cp proxy.sh ~/
 cp jandedobbeleer.omp.json ~/
 
+echo "install bat"
+wget https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-musl_0.23.0_amd64.deb
+dpkg -i bat-musl_0.23.0_amd64.deb
+
 echo "install go"
 wget https://storage.googleapis.com/golang/getgo/installer_linux
 chmod +x ./installer_linux
