@@ -30,6 +30,7 @@ sudo apt install libevent-dev -y
 sudo apt install tmux -y
 sudo apt install python3.10 -y
 sudo apt install python3.10-venv -y
+sudo apt-get install gdb
 echo "--------------------"
 
 echo "install docker"
