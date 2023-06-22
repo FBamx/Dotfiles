@@ -58,6 +58,13 @@ cp jandedobbeleer.omp.json ~/
 echo "install bat"
 wget https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-musl_0.23.0_amd64.deb
 dpkg -i bat-musl_0.23.0_amd64.deb
+echo "--------------------"
+
+echo "install gdu"
+curl -L https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz | tar xz
+chmod +x gdu_linux_amd64
+mv gdu_linux_amd64 /usr/bin/gdu
+echo "--------------------"
 
 echo "install go"
 wget https://storage.googleapis.com/golang/getgo/installer_linux
@@ -124,6 +131,10 @@ sudo ln -s /usr/bin/python3 /usr/bin/python
 cd autojump
 ./install.py
 cd .. && rm -rf autojump
+echo "--------------------"
+
+echo "instal bpytop"
+pip3 install bpytop --upgrade
 echo "--------------------"
 
 echo "if the environment is WSL, please configure /etc/wsl.conf like follow"
