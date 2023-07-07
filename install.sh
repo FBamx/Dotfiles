@@ -93,7 +93,7 @@ nvm install v16.8.0
 echo "--------------------"
 
 echo "install nvim"
-wget https://github.com/neovim/neovim/releases/tag/stable/nvim.appimage
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/bin/nvim
 echo "--------------------"
 
